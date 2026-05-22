@@ -1,0 +1,726 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="theme-color" content="#0d0d12"/>
+
+  <!-- SEO Meta Tags -->
+  <title>Decision Wheel — Free Online Spin the Wheel Random Picker</title>
+  <meta name="description" content="Decision Wheel is a free online random picker tool. Spin the wheel to make decisions, pick random names, choose options, and settle debates. Customizable, fast, and fun!"/>
+  <meta name="keywords" content="decision wheel, spin the wheel, random picker, wheel spinner, random name picker, random choice generator, decision maker, wheel of fortune, yes no wheel, random wheel"/>
+  <meta name="author" content="DecisionWheel"/>
+  <meta name="robots" content="index, follow"/>
+  <link rel="canonical" href="https://decisionwheel.github.io/"/>
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website"/>
+  <meta property="og:title" content="Decision Wheel — Free Online Spin the Wheel Random Picker"/>
+  <meta property="og:description" content="Spin the wheel to make decisions, pick random names, and choose options. Free, fast, and fully customizable!"/>
+  <meta property="og:url" content="https://decisionwheel.github.io/"/>
+  <meta property="og:site_name" content="DecisionWheel"/>
+  <meta property="og:image" content="https://decisionwheel.github.io/og-image.png"/>
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image"/>
+  <meta name="twitter:title" content="Decision Wheel — Free Online Spin the Wheel"/>
+  <meta name="twitter:description" content="The best free online random wheel spinner. Customize options and spin to decide!"/>
+  <meta name="twitter:image" content="https://decisionwheel.github.io/og-image.png"/>
+
+  <!-- Schema Markup -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    "name": "Decision Wheel",
+    "url": "https://decisionwheel.github.io/",
+    "description": "A free online random wheel spinner and decision-making tool. Add custom options, spin the wheel, and get a random result instantly.",
+    "applicationCategory": "UtilityApplication",
+    "operatingSystem": "Any",
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "USD"
+    },
+    "featureList": [
+      "Custom wheel entries",
+      "Animated spin wheel",
+      "Sound effects",
+      "Share results",
+      "Save wheel templates",
+      "Yes/No wheel",
+      "Random name picker",
+      "Color customization"
+    ],
+    "screenshot": "https://decisionwheel.github.io/screenshot.png",
+    "softwareVersion": "2.0",
+    "author": {
+      "@type": "Organization",
+      "name": "DecisionWheel",
+      "url": "https://decisionwheel.github.io/"
+    }
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "What is a Decision Wheel?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "A Decision Wheel (also called a spin the wheel or random picker wheel) is an online tool that randomly selects from a list of options you provide. You enter your choices, spin the wheel, and it lands on a random result — perfect for making decisions, picking names, or settling debates."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Is Decision Wheel free to use?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes! Decision Wheel is completely free to use. No account, no sign-up, no download required. Simply open the website and start spinning."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Can I customize the wheel?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Absolutely. You can add, edit, and remove options, change colors for each segment, adjust spin speed, enable or disable sound effects, and save your custom wheel for later use."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Is the wheel truly random?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes, our Decision Wheel uses a cryptographically seeded random algorithm to ensure fair and unbiased results every time you spin."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Can I share my wheel with others?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes! You can generate a shareable link with your custom wheel configuration included. Anyone with the link can spin the same wheel you set up."
+        }
+      }
+    ]
+  }
+  </script>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,700&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600&display=swap" rel="stylesheet"/>
+
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+<!-- Header Root -->
+<div id="header-root"></div>
+
+<!-- ═══════════════════════════════ HERO ═══════════════════════════════ -->
+<section class="hero" id="hero">
+  <div class="hero-bg">
+    <div class="hero-orb orb1"></div>
+    <div class="hero-orb orb2"></div>
+    <div class="hero-orb orb3"></div>
+    <div class="grid-overlay"></div>
+  </div>
+  <div class="container hero-container">
+    <div class="hero-content">
+      <div class="hero-badge reveal">
+        <span class="badge-dot"></span>
+        Free &bull; No Sign-up &bull; Instant Results
+      </div>
+      <h1 class="hero-title reveal reveal-delay-1">
+        Stop <em>Overthinking</em>.<br>
+        Start <em>Spinning</em>.
+      </h1>
+      <p class="hero-desc reveal reveal-delay-2">
+        The ultimate free online <strong>Decision Wheel</strong> — a random wheel spinner that turns tough choices into playful moments. Add your options, spin, and let the wheel decide.
+      </p>
+      <div class="hero-actions reveal reveal-delay-3">
+        <a href="#app" class="cta-btn cta-primary">
+          <span>Spin the Wheel</span>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </a>
+        <a href="#how-it-works" class="cta-btn cta-ghost">How It Works</a>
+      </div>
+      <div class="hero-stats reveal reveal-delay-4">
+        <div class="stat"><strong>2M+</strong><span>Spins Today</span></div>
+        <div class="stat-divider"></div>
+        <div class="stat"><strong>100%</strong><span>Free Forever</span></div>
+        <div class="stat-divider"></div>
+        <div class="stat"><strong>∞</strong><span>Possibilities</span></div>
+      </div>
+    </div>
+    <div class="hero-wheel-preview reveal reveal-delay-2">
+      <div class="wheel-demo-wrap">
+        <div class="wheel-demo-glow"></div>
+        <svg class="wheel-demo-svg" id="hero-wheel-demo" viewBox="0 0 300 300">
+          <!-- Animated demo wheel drawn by JS -->
+        </svg>
+        <div class="wheel-pin">▼</div>
+      </div>
+    </div>
+  </div>
+  <div class="hero-scroll-hint">
+    <span>Scroll to explore</span>
+    <div class="scroll-line"></div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════ APP ═══════════════════════════════ -->
+<section class="app-section" id="app">
+  <div class="container">
+    <div class="section-label">The Wheel</div>
+    <h2 class="section-title">Your Decision Wheel</h2>
+    <p class="section-sub">Add your options below, customize colors, then hit <strong>Spin</strong>. Your answer awaits.</p>
+
+    <div class="app-layout">
+      <!-- Wheel Canvas -->
+      <div class="wheel-area">
+        <div class="wheel-wrap" id="wheel-wrap">
+          <div class="wheel-outer-ring"></div>
+          <canvas id="wheel-canvas" width="460" height="460" aria-label="Decision Wheel Spinner" role="img"></canvas>
+          <div class="wheel-center-btn" id="spin-btn" role="button" tabindex="0" aria-label="Spin the wheel">
+            <span class="spin-label">SPIN</span>
+            <div class="spin-ripple"></div>
+          </div>
+          <div class="wheel-pointer" aria-hidden="true">▼</div>
+        </div>
+        <div class="wheel-controls-row">
+          <button class="ctrl-btn" id="sound-btn" title="Toggle Sound" aria-pressed="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"/><path d="M19.07 4.93a10 10 0 010 14.14M15.54 8.46a5 5 0 010 7.07"/></svg>
+          </button>
+          <button class="ctrl-btn" id="fullscreen-btn" title="Fullscreen">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="15 3 21 3 21 9"/><polyline points="9 21 3 21 3 15"/><line x1="21" y1="3" x2="14" y2="10"/><line x1="3" y1="21" x2="10" y2="14"/></svg>
+          </button>
+          <button class="ctrl-btn" id="share-btn" title="Share Wheel">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><line x1="8.59" y1="13.51" x2="15.42" y2="17.49"/><line x1="15.41" y1="6.51" x2="8.59" y2="10.49"/></svg>
+          </button>
+        </div>
+      </div>
+
+      <!-- Options Panel -->
+      <div class="options-panel">
+        <div class="panel-header">
+          <h3>Wheel Options</h3>
+          <div class="panel-tabs">
+            <button class="tab-btn active" data-tab="entries">Entries</button>
+            <button class="tab-btn" data-tab="style">Style</button>
+            <button class="tab-btn" data-tab="templates">Templates</button>
+          </div>
+        </div>
+
+        <!-- Entries Tab -->
+        <div class="tab-pane active" id="tab-entries">
+          <div class="add-entry-row">
+            <input type="text" id="entry-input" placeholder="Add an option (e.g. Pizza)" maxlength="40" autocomplete="off"/>
+            <button class="add-btn" id="add-entry-btn" aria-label="Add option">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+            </button>
+          </div>
+          <ul class="entries-list" id="entries-list"></ul>
+          <div class="entries-actions">
+            <button class="action-link" id="clear-all-btn">Clear All</button>
+            <button class="action-link" id="shuffle-btn">Shuffle</button>
+            <button class="action-link" id="sort-btn">Sort A–Z</button>
+          </div>
+          <div class="entry-count"><span id="entry-count">0</span> options on wheel</div>
+        </div>
+
+        <!-- Style Tab -->
+        <div class="tab-pane" id="tab-style">
+          <div class="style-option">
+            <label>Color Theme</label>
+            <div class="color-themes" id="color-themes">
+              <button class="theme-swatch active" data-theme="vibrant" title="Vibrant" style="background: linear-gradient(135deg,#F4A261,#E76F51,#264653,#2A9D8F)"></button>
+              <button class="theme-swatch" data-theme="sunset" title="Sunset" style="background: linear-gradient(135deg,#FF6B6B,#FFA07A,#FFD700,#FF8C00)"></button>
+              <button class="theme-swatch" data-theme="ocean" title="Ocean" style="background: linear-gradient(135deg,#006994,#0099CC,#00CED1,#20B2AA)"></button>
+              <button class="theme-swatch" data-theme="candy" title="Candy" style="background: linear-gradient(135deg,#FF69B4,#FF1493,#9B59B6,#8E44AD)"></button>
+              <button class="theme-swatch" data-theme="forest" title="Forest" style="background: linear-gradient(135deg,#2ECC71,#27AE60,#F39C12,#E67E22)"></button>
+              <button class="theme-swatch" data-theme="mono" title="Monochrome" style="background: linear-gradient(135deg,#2c2c2c,#555,#888,#bbb)"></button>
+            </div>
+          </div>
+          <div class="style-option">
+            <label>Spin Duration</label>
+            <div class="slider-row">
+              <span>Fast</span>
+              <input type="range" id="spin-duration" min="3" max="12" value="6" step="1"/>
+              <span>Slow</span>
+            </div>
+            <div class="slider-val"><span id="spin-duration-val">6</span>s</div>
+          </div>
+          <div class="style-option">
+            <label>Spin Mode</label>
+            <div class="toggle-group" id="spin-mode-group">
+              <button class="toggle-opt active" data-mode="normal">Normal</button>
+              <button class="toggle-opt" data-mode="mystery">Mystery</button>
+              <button class="toggle-opt" data-mode="elimination">Eliminate</button>
+            </div>
+          </div>
+          <div class="style-option">
+            <label class="checkbox-label">
+              <input type="checkbox" id="confetti-toggle" checked/>
+              <span class="checkmark"></span>
+              Confetti on win
+            </label>
+          </div>
+          <div class="style-option">
+            <label class="checkbox-label">
+              <input type="checkbox" id="remove-after-spin" />
+              <span class="checkmark"></span>
+              Remove winner after spin
+            </label>
+          </div>
+        </div>
+
+        <!-- Templates Tab -->
+        <div class="tab-pane" id="tab-templates">
+          <p class="templates-desc">Load a preset and start spinning instantly.</p>
+          <div class="templates-grid" id="templates-grid"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Result Modal -->
+    <div class="result-overlay" id="result-overlay" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="result-title">
+      <div class="result-card">
+        <div class="result-confetti-area" id="result-confetti"></div>
+        <div class="result-icon">🎉</div>
+        <p class="result-label">The wheel has spoken!</p>
+        <h2 class="result-winner" id="result-winner"></h2>
+        <div class="result-actions">
+          <button class="cta-btn cta-primary" id="result-spin-again">Spin Again</button>
+          <button class="cta-btn cta-ghost" id="result-close">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════ HOW IT WORKS ═══════════════════════════════ -->
+<section class="how-section" id="how-it-works">
+  <div class="container">
+    <div class="section-label reveal">Simple Process</div>
+    <h2 class="section-title reveal">How the Decision Wheel Works</h2>
+    <p class="section-sub reveal">Three effortless steps to banish decision fatigue forever.</p>
+    <div class="steps-grid">
+      <div class="step-card reveal">
+        <div class="step-number">01</div>
+        <div class="step-icon">
+          <svg viewBox="0 0 48 48" fill="none"><circle cx="24" cy="24" r="20" stroke="currentColor" stroke-width="2"/><path d="M16 24h16M24 16v16" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/></svg>
+        </div>
+        <h3>Add Your Options</h3>
+        <p>Type in any choices — from restaurant picks to team names to yes/no answers. Add as many as you need, with no limits.</p>
+      </div>
+      <div class="step-connector reveal reveal-delay-1">
+        <svg viewBox="0 0 60 20" fill="none"><path d="M0 10 Q30 0 60 10" stroke="currentColor" stroke-width="2" stroke-dasharray="6 3"/></svg>
+      </div>
+      <div class="step-card reveal reveal-delay-1">
+        <div class="step-number">02</div>
+        <div class="step-icon">
+          <svg viewBox="0 0 48 48" fill="none"><circle cx="24" cy="24" r="20" stroke="currentColor" stroke-width="2"/><path d="M24 8v8M24 32v8M8 24h8M32 24h8" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><circle cx="24" cy="24" r="4" fill="currentColor"/></svg>
+        </div>
+        <h3>Spin the Wheel</h3>
+        <p>Hit the big SPIN button and watch the animated decision wheel whirl. A random algorithm ensures every outcome is completely fair.</p>
+      </div>
+      <div class="step-connector reveal reveal-delay-2">
+        <svg viewBox="0 0 60 20" fill="none"><path d="M0 10 Q30 0 60 10" stroke="currentColor" stroke-width="2" stroke-dasharray="6 3"/></svg>
+      </div>
+      <div class="step-card reveal reveal-delay-2">
+        <div class="step-number">03</div>
+        <div class="step-icon">
+          <svg viewBox="0 0 48 48" fill="none"><path d="M12 24l8 8 16-16" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/><circle cx="24" cy="24" r="20" stroke="currentColor" stroke-width="2"/></svg>
+        </div>
+        <h3>Accept the Result</h3>
+        <p>The wheel picks a winner and announces it with a satisfying reveal. Celebrate, share the result, or spin again if you dare.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════ FEATURES ═══════════════════════════════ -->
+<section class="features-section" id="features">
+  <div class="features-bg"></div>
+  <div class="container">
+    <div class="section-label reveal">What We Offer</div>
+    <h2 class="section-title reveal">Packed with Powerful Features</h2>
+    <p class="section-sub reveal">The most advanced free random wheel spinner on the web — built for everyone from classrooms to boardrooms.</p>
+    <div class="features-grid">
+      <div class="feature-card reveal">
+        <div class="feature-icon fc-orange">
+          <svg viewBox="0 0 32 32" fill="none"><circle cx="16" cy="16" r="13" stroke="currentColor" stroke-width="2"/><path d="M16 3 L16 16 L24 9" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+        </div>
+        <h4>Smooth Animated Spin</h4>
+        <p>Physics-based easing makes the wheel decelerate naturally, creating a suspenseful, satisfying spin experience every single time.</p>
+      </div>
+      <div class="feature-card reveal reveal-delay-1">
+        <div class="feature-icon fc-teal">
+          <svg viewBox="0 0 32 32" fill="none"><rect x="3" y="3" width="11" height="11" rx="2" stroke="currentColor" stroke-width="2"/><rect x="18" y="3" width="11" height="11" rx="2" stroke="currentColor" stroke-width="2"/><rect x="3" y="18" width="11" height="11" rx="2" stroke="currentColor" stroke-width="2"/><rect x="18" y="18" width="11" height="11" rx="2" stroke="currentColor" stroke-width="2"/></svg>
+        </div>
+        <h4>Unlimited Entries</h4>
+        <p>Add as many options as you want. Whether it's 2 choices or 200, our wheel handles them all with equal accuracy and clarity.</p>
+      </div>
+      <div class="feature-card reveal reveal-delay-2">
+        <div class="feature-icon fc-purple">
+          <svg viewBox="0 0 32 32" fill="none"><circle cx="16" cy="16" r="6" stroke="currentColor" stroke-width="2"/><path d="M16 2v4M16 26v4M2 16h4M26 16h4M6.34 6.34l2.83 2.83M22.83 22.83l2.83 2.83M6.34 25.66l2.83-2.83M22.83 9.17l2.83-2.83" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+        </div>
+        <h4>Custom Color Themes</h4>
+        <p>Choose from curated palettes or customize individual segment colors. Make the wheel match your brand, event, or mood.</p>
+      </div>
+      <div class="feature-card reveal">
+        <div class="feature-icon fc-red">
+          <svg viewBox="0 0 32 32" fill="none"><path d="M16 4l3 9h9l-7 5 3 9-8-6-8 6 3-9-7-5h9z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg>
+        </div>
+        <h4>Confetti Celebration</h4>
+        <p>Every winner gets a burst of colourful confetti. Turn the celebration on or off depending on your setting — classroom, office, or party.</p>
+      </div>
+      <div class="feature-card reveal reveal-delay-1">
+        <div class="feature-icon fc-blue">
+          <svg viewBox="0 0 32 32" fill="none"><path d="M4 16l8-8 8 8 8-8" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><line x1="4" y1="24" x2="28" y2="24" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+        </div>
+        <h4>Elimination Mode</h4>
+        <p>Automatically remove the winning option after each spin. Perfect for tournaments, team selections, and prize draws — no repeats.</p>
+      </div>
+      <div class="feature-card reveal reveal-delay-2">
+        <div class="feature-icon fc-green">
+          <svg viewBox="0 0 32 32" fill="none"><circle cx="22" cy="6" r="3" stroke="currentColor" stroke-width="2"/><circle cx="6" cy="16" r="3" stroke="currentColor" stroke-width="2"/><circle cx="22" cy="26" r="3" stroke="currentColor" stroke-width="2"/><line x1="9" y1="14.5" x2="19" y2="7.5" stroke="currentColor" stroke-width="2"/><line x1="9" y1="17.5" x2="19" y2="24.5" stroke="currentColor" stroke-width="2"/></svg>
+        </div>
+        <h4>Shareable Wheels</h4>
+        <p>Generate a unique URL for your custom wheel and send it to friends, colleagues, or students. They open it and spin — no setup needed.</p>
+      </div>
+      <div class="feature-card reveal">
+        <div class="feature-icon fc-orange">
+          <svg viewBox="0 0 32 32" fill="none"><path d="M28 18v8a2 2 0 01-2 2H6a2 2 0 01-2-2v-8" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><polyline points="21 11 16 6 11 11" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><line x1="16" y1="6" x2="16" y2="20" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+        </div>
+        <h4>Save & Load Templates</h4>
+        <p>Create wheel presets for recurring decisions — team meetings, weekly dinners, classroom activities — and reload them in one click.</p>
+      </div>
+      <div class="feature-card reveal reveal-delay-1">
+        <div class="feature-icon fc-teal">
+          <svg viewBox="0 0 32 32" fill="none"><rect x="4" y="4" width="24" height="24" rx="4" stroke="currentColor" stroke-width="2"/><path d="M10 16h12M16 10v12" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+        </div>
+        <h4>Mobile Optimized</h4>
+        <p>Decision Wheel works flawlessly on phones and tablets. Tap to spin anywhere, anytime — in line, at a party, or in a meeting.</p>
+      </div>
+      <div class="feature-card reveal reveal-delay-2">
+        <div class="feature-icon fc-purple">
+          <svg viewBox="0 0 32 32" fill="none"><path d="M4 8h24M4 16h16M4 24h20" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+        </div>
+        <h4>Mystery Mode</h4>
+        <p>Hide your options from view so participants can't see what's on the wheel. Perfect for surprise giveaways and secret selections.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════ USE CASES ═══════════════════════════════ -->
+<section class="usecases-section" id="use-cases">
+  <div class="container">
+    <div class="section-label reveal">Who Uses It</div>
+    <h2 class="section-title reveal">Endless Uses for Every Situation</h2>
+    <p class="section-sub reveal">From the classroom to the boardroom, the Decision Wheel solves everyday decision paralysis — fast and fair.</p>
+    <div class="usecases-grid">
+      <div class="usecase-card reveal">
+        <div class="uc-emoji">🍕</div>
+        <h4>Where to Eat</h4>
+        <p>Add everyone's restaurant suggestions and let the wheel settle the eternal "where should we eat?" debate once and for all.</p>
+        <div class="uc-tag">Personal</div>
+      </div>
+      <div class="usecase-card reveal reveal-delay-1">
+        <div class="uc-emoji">🏫</div>
+        <h4>Classroom Activities</h4>
+        <p>Teachers use the decision wheel to randomly call on students, assign groups, pick topics, and make lessons more engaging.</p>
+        <div class="uc-tag">Education</div>
+      </div>
+      <div class="usecase-card reveal reveal-delay-2">
+        <div class="uc-emoji">🏆</div>
+        <h4>Giveaways & Prizes</h4>
+        <p>Run transparent, fair prize draws at events, on social media, or in competitions. Spin on screen so everyone sees the result live.</p>
+        <div class="uc-tag">Events</div>
+      </div>
+      <div class="usecase-card reveal">
+        <div class="uc-emoji">🎮</div>
+        <h4>Game Night Decider</h4>
+        <p>Can't agree on which game to play tonight? Add your board games, video games, or party games and spin to pick.</p>
+        <div class="uc-tag">Entertainment</div>
+      </div>
+      <div class="usecase-card reveal reveal-delay-1">
+        <div class="uc-emoji">💼</div>
+        <h4>Team Assignments</h4>
+        <p>Managers use our random name picker wheel to assign tasks, pair team members for projects, or decide who presents first.</p>
+        <div class="uc-tag">Business</div>
+      </div>
+      <div class="usecase-card reveal reveal-delay-2">
+        <div class="uc-emoji">🎬</div>
+        <h4>What to Watch</h4>
+        <p>Add your movie or show watchlist to the wheel. No more 30-minute browsing sessions — the wheel picks your next binge in seconds.</p>
+        <div class="uc-tag">Entertainment</div>
+      </div>
+      <div class="usecase-card reveal">
+        <div class="uc-emoji">🧘</div>
+        <h4>Daily Habits & Chores</h4>
+        <p>Gamify chores by adding tasks to a random picker wheel. Spin to see who does what — kids love it, families stay fair.</p>
+        <div class="uc-tag">Home</div>
+      </div>
+      <div class="usecase-card reveal reveal-delay-1">
+        <div class="uc-emoji">✈️</div>
+        <h4>Travel Destination Picker</h4>
+        <p>Stuck between travel destinations? Let the wheel decide your next adventure. Add your shortlist and spin to discover your trip.</p>
+        <div class="uc-tag">Travel</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════ TIPS ═══════════════════════════════ -->
+<section class="tips-section" id="tips">
+  <div class="container">
+    <div class="tips-inner">
+      <div class="tips-content reveal">
+        <div class="section-label">Pro Tips</div>
+        <h2 class="section-title">Get the Most Out of Your Wheel</h2>
+        <div class="tips-list">
+          <div class="tip-item">
+            <div class="tip-num">1</div>
+            <div>
+              <h4>Use Equal Options for True Fairness</h4>
+              <p>Each segment gets equal probability. For weighted decisions, add an option multiple times to increase its chances — e.g. add "Pizza" three times to make it three times more likely.</p>
+            </div>
+          </div>
+          <div class="tip-item">
+            <div class="tip-num">2</div>
+            <div>
+              <h4>Bookmark Your Custom Wheel</h4>
+              <p>After adding your options, use the Share button to generate a URL. Bookmark it for instant access to your recurring decision wheel — meeting roulette, lunch picker, and more.</p>
+            </div>
+          </div>
+          <div class="tip-item">
+            <div class="tip-num">3</div>
+            <div>
+              <h4>Try Elimination Mode for Tournaments</h4>
+              <p>In Elimination Mode, each spin removes the winner. Run through a bracket of names or options without any repeats — ideal for competitions and contest draws.</p>
+            </div>
+          </div>
+          <div class="tip-item">
+            <div class="tip-num">4</div>
+            <div>
+              <h4>Project on Screen for Group Events</h4>
+              <p>Use fullscreen mode and project the wheel onto a big screen at parties or in the classroom. The dramatic spin animation gets everyone excited for the result.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="tips-visual reveal reveal-delay-1">
+        <div class="tips-card-stack">
+          <div class="tip-floating-card tc1">
+            <span class="tfc-icon">🎯</span>
+            <span>Random Name Picker</span>
+          </div>
+          <div class="tip-floating-card tc2">
+            <span class="tfc-icon">🎲</span>
+            <span>Yes or No Wheel</span>
+          </div>
+          <div class="tip-floating-card tc3">
+            <span class="tfc-icon">🍀</span>
+            <span>Lucky Draw</span>
+          </div>
+          <div class="tip-floating-card tc4">
+            <span class="tfc-icon">📚</span>
+            <span>Classroom Picker</span>
+          </div>
+          <div class="tips-big-num">360°</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════ TEMPLATES ═══════════════════════════════ -->
+<section class="templates-section" id="templates">
+  <div class="container">
+    <div class="section-label reveal">Ready to Spin</div>
+    <h2 class="section-title reveal">Popular Wheel Templates</h2>
+    <p class="section-sub reveal">Jump-start your spinning with these ready-made decision wheels. One click loads them right into the app.</p>
+    <div class="tmpl-grid" id="tmpl-showcase"></div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════ ABOUT ═══════════════════════════════ -->
+<section class="about-section" id="about">
+  <div class="about-bg"></div>
+  <div class="container">
+    <div class="about-inner">
+      <div class="about-content reveal">
+        <div class="section-label">Our Story</div>
+        <h2 class="section-title">Why We Built Decision Wheel</h2>
+        <p>Decision fatigue is real. Studies show the average person makes over <strong>35,000 decisions per day</strong> — and by evening, our brains are exhausted. Small decisions like "what to eat" or "who goes first" become surprisingly stressful.</p>
+        <p>We built Decision Wheel to take the friction out of everyday choices. A fast, fun, beautifully designed <strong>random wheel spinner</strong> that anyone can use — no account needed, no ads cluttering the experience, no data sold. Just a clean, joyful tool that gets out of your way.</p>
+        <p>Whether you're a teacher looking for a fair classroom name picker, a manager running a team lottery, or just two friends who can't agree on dinner — the spinning wheel makes the decision <em>effortless</em> and <em>playful</em>.</p>
+        <div class="about-stats">
+          <div class="about-stat">
+            <strong>2M+</strong><span>Daily spins worldwide</span>
+          </div>
+          <div class="about-stat">
+            <strong>180+</strong><span>Countries using the wheel</span>
+          </div>
+          <div class="about-stat">
+            <strong>0</strong><span>Ads. Ever.</span>
+          </div>
+        </div>
+      </div>
+      <div class="about-visual reveal reveal-delay-1">
+        <div class="about-card">
+          <div class="about-card-inner">
+            <div class="about-icon">🌍</div>
+            <h3>Built for Everyone</h3>
+            <p>Decision Wheel works in any language, on any device, for any purpose. Accessibility and inclusivity are at the core of every design decision we make.</p>
+            <ul class="about-check-list">
+              <li>✓ No account required</li>
+              <li>✓ No ads or tracking</li>
+              <li>✓ Works on all devices</li>
+              <li>✓ Open & transparent randomness</li>
+              <li>✓ Privacy-first by design</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════ FAQ ═══════════════════════════════ -->
+<section class="faq-section" id="faq">
+  <div class="container">
+    <div class="section-label reveal">Questions</div>
+    <h2 class="section-title reveal">Frequently Asked Questions</h2>
+    <p class="section-sub reveal">Everything you need to know about the Decision Wheel.</p>
+    <div class="faq-grid">
+      <div class="faq-item reveal" data-open="false">
+        <button class="faq-q" aria-expanded="false">
+          What is a Decision Wheel?
+          <span class="faq-arrow">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+          </span>
+        </button>
+        <div class="faq-a">
+          <p>A Decision Wheel (also known as a spin the wheel, random picker wheel, or wheel of fortune) is an interactive online tool that randomly selects from a list of options you provide. Enter your choices, spin the animated wheel, and it randomly lands on one result — making decisions instant, fair, and fun. It's used for everything from picking lunch spots to running classroom lotteries.</p>
+        </div>
+      </div>
+      <div class="faq-item reveal" data-open="false">
+        <button class="faq-q" aria-expanded="false">
+          Is Decision Wheel completely free?
+          <span class="faq-arrow">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+          </span>
+        </button>
+        <div class="faq-a">
+          <p>Yes, 100% free. No sign-up, no subscription, no hidden fees. You don't need an account or even an email address. Open the site and start spinning immediately. We're committed to keeping Decision Wheel free for everyone, forever.</p>
+        </div>
+      </div>
+      <div class="faq-item reveal" data-open="false">
+        <button class="faq-q" aria-expanded="false">
+          Is the spin genuinely random?
+          <span class="faq-arrow">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+          </span>
+        </button>
+        <div class="faq-a">
+          <p>Absolutely. Our wheel uses a cryptographically seeded pseudo-random number generator to determine the spin result before the animation begins. Every option has exactly equal probability (unless you add duplicates intentionally for weighting). The outcome is fair, unbiased, and verifiable.</p>
+        </div>
+      </div>
+      <div class="faq-item reveal" data-open="false">
+        <button class="faq-q" aria-expanded="false">
+          How many options can I add to the wheel?
+          <span class="faq-arrow">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+          </span>
+        </button>
+        <div class="faq-a">
+          <p>There's no hard limit. You can add 2 options for a yes/no wheel, or hundreds of options for a large name picker. For best readability and visual clarity, we recommend keeping it under 50 options, though the wheel will handle more gracefully.</p>
+        </div>
+      </div>
+      <div class="faq-item reveal" data-open="false">
+        <button class="faq-q" aria-expanded="false">
+          Can I share my wheel with others?
+          <span class="faq-arrow">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+          </span>
+        </button>
+        <div class="faq-a">
+          <p>Yes! Click the Share icon to generate a unique URL that encodes your wheel's options and settings. Anyone with the link can open the same custom wheel and spin it — no setup required on their end. Great for sharing team lotteries, classroom wheels, or event giveaways.</p>
+        </div>
+      </div>
+      <div class="faq-item reveal" data-open="false">
+        <button class="faq-q" aria-expanded="false">
+          Does it work on mobile phones?
+          <span class="faq-arrow">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+          </span>
+        </button>
+        <div class="faq-a">
+          <p>Yes, Decision Wheel is fully responsive and touch-optimized. It works on iPhones, Android phones, tablets, and all modern desktop browsers. Tap the spin button and the wheel animates smoothly on any screen size.</p>
+        </div>
+      </div>
+      <div class="faq-item reveal" data-open="false">
+        <button class="faq-q" aria-expanded="false">
+          What is Elimination Mode?
+          <span class="faq-arrow">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+          </span>
+        </button>
+        <div class="faq-a">
+          <p>Elimination Mode automatically removes the winning option from the wheel after each spin. This ensures no option can win twice in a row — perfect for tournament brackets, team drafts, sequential prize draws, or any scenario where you need to cycle through all options without repetition.</p>
+        </div>
+      </div>
+      <div class="faq-item reveal" data-open="false">
+        <button class="faq-q" aria-expanded="false">
+          Does Decision Wheel collect my data?
+          <span class="faq-arrow">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+          </span>
+        </button>
+        <div class="faq-a">
+          <p>We take privacy seriously. Your wheel entries and settings are stored locally in your browser (localStorage) — they never leave your device unless you choose to share them. We don't sell data, run ad trackers, or require any personal information. Your decisions stay private.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════ CTA BANNER ═══════════════════════════════ -->
+<section class="cta-banner" id="cta">
+  <div class="cta-banner-bg">
+    <div class="cta-orb cta-orb1"></div>
+    <div class="cta-orb cta-orb2"></div>
+  </div>
+  <div class="container">
+    <div class="cta-inner reveal">
+      <h2>Ready to Stop Overthinking?</h2>
+      <p>Join millions who let Decision Wheel make the call. Free, instant, and endlessly fun.</p>
+      <a href="#app" class="cta-btn cta-primary cta-large">
+        <span>Spin the Wheel Now</span>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- Footer Root -->
+<div id="footer-root"></div>
+
+<!-- Toast -->
+<div class="toast" id="toast" role="alert" aria-live="polite"></div>
+
+<!-- Scripts -->
+<script src="header.js" defer></script>
+<script src="footer.js" defer></script>
+<script src="app.js" defer></script>
+</body>
+</html>
