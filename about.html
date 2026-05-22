@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="theme-color" content="#0d0d12"/>
+
+  <title>About Us — Decision Wheel</title>
+  <meta name="description" content="Discover the story behind Decision Wheel. Created by Rebecca, a professional web developer and SEO expert, to help you beat decision fatigue."/>
+  <meta name="robots" content="index, follow"/>
+  <link rel="canonical" href="https://decisionwheel.github.io/about"/>
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon.png">
+
+  <meta property="og:type" content="website"/>
+  <meta property="og:title" content="About Us — Decision Wheel"/>
+  <meta property="og:description" content="Discover the story behind Decision Wheel and its mission to simplify daily choices."/>
+  <meta property="og:url" content="https://decisionwheel.github.io/about"/>
+  <meta property="og:site_name" content="DecisionWheel"/>
+  <meta property="og:image" content="https://decisionwheel.github.io/og-image.png"/>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,700&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600&display=swap" rel="stylesheet"/>
+
+  <link rel="stylesheet" href="style.css"/>
+  <style>
+    .about-page { padding: 120px 0 80px; position: relative; overflow: hidden; background-color: #0d0d12; color: #e4e4e7; }
+    .about-page-container { max-width: 900px; margin: 0 auto; padding: 0 24px; position: relative; z-index: 2; }
+    .about-page-header { margin-bottom: 48px; text-align: center; }
+    .about-page-header h1 { font-family: 'Playfair Display', serif; font-size: 3.5rem; color: #ffffff; margin-bottom: 16px; font-weight: 900; }
+    .about-page-header p { font-family: 'DM Sans', sans-serif; font-size: 1.2rem; color: #a1a1aa; max-width: 600px; margin: 0 auto; }
+    .about-page-content { font-family: 'DM Sans', sans-serif; line-height: 1.8; color: #d4d4d8; font-size: 1.1rem; }
+    .about-page-content h2 { font-family: 'Playfair Display', serif; font-size: 2rem; color: #ffffff; margin: 40px 0 20px; font-weight: 700; }
+    .about-page-content p { margin-bottom: 24px; }
+    
+    .creator-profile { display: flex; gap: 40px; align-items: center; background: rgba(255, 255, 255, 0.03); border: 1px solid rgba(255, 255, 255, 0.08); padding: 40px; border-radius: 24px; margin-top: 48px; backdrop-filter: blur(12px); }
+    .creator-avatar { width: 120px; height: 120px; background: linear-gradient(135deg, #54b4d3, #2a9d8f); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 3rem; color: white; box-shadow: 0 8px 32px rgba(84, 180, 211, 0.2); flex-shrink: 0; }
+    .creator-info h3 { font-family: 'Playfair Display', serif; font-size: 1.75rem; color: #ffffff; margin-bottom: 8px; }
+    .creator-tag { font-size: 0.9rem; text-transform: uppercase; letter-spacing: 0.1em; color: #54b4d3; font-weight: 600; margin-bottom: 12px; }
+    
+    @media (max-width: 768px) {
+      .about-page-header h1 { font-size: 2.5rem; }
+      .creator-profile { flex-direction: column; text-align: center; padding: 32px 24px; }
+    }
+  </style>
+</head>
+<body>
+
+<div id="header-root"></div>
+
+<section class="about-page">
+  <div class="hero-bg">
+    <div class="hero-orb orb1" style="top: -10%; left: -10%;"></div>
+    <div class="hero-orb orb2" style="bottom: -10%; right: -10%;"></div>
+    <div class="grid-overlay"></div>
+  </div>
+
+  <div class="about-page-container">
+    <div class="about-page-header">
+      <h1>Our Story</h1>
+      <p>Banish indecision, embrace randomness, and reclaim your time.</p>
+    </div>
+
+    <div class="about-page-content">
+      <p>Decision fatigue is one of the stealthiest modern productivity killers. Research suggests that the average adult makes thousands of choices every single day. By the time evening rolls around, our brains are simply spent. Paradoxically, small questions like <em>"What should we have for dinner?"</em> or <em>"Who should present first in our team meeting?"</em> become unexpectedly exhausting hurdles.</p>
+      
+      <p>We built <strong>Decision Wheel</strong> to take the friction entirely out of those moments. It's a premium, high-fidelity, completely free online random wheel spinner engineered to transition tough choices into engaging, playful outcomes. No forcing accounts, no subscriptions, and zero obstructive tracking code. Just a beautiful, ultra-clean web utility that yields unbiased decisions in milliseconds.</p>
+
+      <h2>The Core Philosophy</h2>
+      <p>We believe everyday utility tools should respect the user. That's why Decision Wheel operates under a strict data-minimization architecture. Your entries remain securely cached in your local browser storage—never transmitted to an external server unless you proactively decide to share a generated link with friends or coworkers.</p>
+
+      <div class="creator-profile">
+        <div class="creator-avatar">👩‍💻</div>
+        <div class="creator-info">
+          <div class="creator-tag">The Architect</div>
+          <h3>Meet Rebecca</h3>
+          <p>Hi there! I am Rebecca, a passionate web developer and SEO expert. I engineered Decision Wheel to combine sub-millisecond front-end physics rendering with an intuitive UI design pattern. By blending clean layout systems with advanced visibility architectures, my goal is to deliver an accessible, privacy-centric web tool that solves an everyday problem for millions of students, teachers, teams, and families worldwide.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div id="footer-root"></div>
+
+<script src="header.js" defer></script>
+<script src="footer.js" defer></script>
+</body>
+</html>
